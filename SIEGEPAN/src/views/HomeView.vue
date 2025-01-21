@@ -11,7 +11,6 @@ import TheWelcome from '../components/TheWelcome.vue';
       </p>
     </section>
     <div class="button-container">
-      <router-link to="/" class="button">Home</router-link>
       <router-link to="/faq" class="button">FAQ</router-link>
       <router-link to="/carousel" class="button">Carrossel</router-link>
     </div>
@@ -32,7 +31,6 @@ import TheWelcome from '../components/TheWelcome.vue';
   box-sizing: border-box;
 }
 
-/* Estilo para o título de boas-vindas */
 .home-container {
   display: flex;
   flex-direction: column;
@@ -45,7 +43,6 @@ import TheWelcome from '../components/TheWelcome.vue';
   text-align: center;
 }
 
-/* Estilo para o título de boas-vindas */
 .welcome-title {
   font-size: 2.5rem;
   font-weight: bold;
@@ -53,7 +50,6 @@ import TheWelcome from '../components/TheWelcome.vue';
   margin-bottom: 1rem;
 }
 
-/* Estilo para a descrição de boas-vindas */
 .welcome-description {
   font-size: 1.2rem;
   color: #666;
@@ -61,7 +57,6 @@ import TheWelcome from '../components/TheWelcome.vue';
   max-width: 600px;
 }
 
-/* Botões de navegação */
 .button-container {
   display: flex;
   gap: 1rem;
@@ -83,7 +78,6 @@ import TheWelcome from '../components/TheWelcome.vue';
   background-color: #0056b3;
 }
 
-/* Ajustes responsivos */
 @media (max-width: 768px) {
   .welcome-title {
     font-size: 2rem;
