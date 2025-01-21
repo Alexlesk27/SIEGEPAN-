@@ -1,6 +1,7 @@
 <template>
   <section class="carousel">
-    <button class="home-btn" @click="goToHome">← Voltar para Home</button>
+    <!-- Botão Voltar para Home no estilo do FAQ -->
+    <button class="back-button" @click="goToHome">←</button>
 
     <div class="carousel-content">
       <!-- Texto à esquerda -->
@@ -10,8 +11,8 @@
 
         <!-- Botões de navegação lado a lado -->
         <div class="nav-buttons">
-          <button class="nav-btn prev" @click="prevSlide" style="background-color :gray; ">‹</button>
-          <button class="nav-btn next" @click="nextSlide" style="background-color :#51ACD9;">›</button>
+          <button class="nav-btn prev" @click="prevSlide" style="background-color: gray;">‹</button>
+          <button class="nav-btn next" @click="nextSlide" style="background-color: #51ACD9;">›</button>
         </div>
       </div>
 
@@ -170,21 +171,23 @@ p {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.home-btn {
+.back-button {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  background: #ff5722;
-  color: white;
+  top: 20px;
+  left: 20px;
+  background: none;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  color: #333;
+  font-size: 1.2rem;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s ease-in-out;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease-in-out;
 }
 
-.home-btn:hover {
-  background: #e64a19;
+.back-button:hover {
+  color: #51ACD9;
 }
 </style>
